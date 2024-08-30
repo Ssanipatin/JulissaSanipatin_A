@@ -15,6 +15,7 @@ public class Aplicacion1 {
     static Scanner leer = new Scanner(System.in);
 
     public static void main(String[] args) {
+        Aplicacion1.ejercicio_2();
 
     }
 
@@ -131,7 +132,7 @@ public class Aplicacion1 {
         int num;
         System.out.println("introduzca un numero");
         num = leer.nextInt();
-          while (num != 0) {
+        while (num != 0) {
             if (num > 0) {
                 System.out.println("positivo");
             } else {
@@ -140,28 +141,23 @@ public class Aplicacion1 {
         }
         System.out.println("introduzca un numero");
         num = leer.nextInt();
-    
 
-    
+    }
 
-    
-
-  
-}
-    
     public static void ejercicio_7() {
         int num, cuadrado;
         do {
             System.out.println("intoduce un numero(negativo para salir) ");
-        num = leer.nextInt();
-        if (num >= 0) {
-        cuadrado = num * num;
-        System.out.println("el cuadradode " + num + "es" + cuadrado);
-        cuadrado = num * num;
-        System.out.println("el cuadradode " + num + "es" + cuadrado);
-        }else 
-          System.out.println("intoduce un numero negativo para el fin del programa");
-        }while (num >= 0);
+            num = leer.nextInt();
+            if (num >= 0) {
+                cuadrado = num * num;
+                System.out.println("el cuadradode " + num + "es" + cuadrado);
+                cuadrado = num * num;
+                System.out.println("el cuadradode " + num + "es" + cuadrado);
+            } else {
+                System.out.println("intoduce un numero negativo para el fin del programa");
+            }
+        } while (num >= 0);
         leer.close();
     }
 
@@ -171,11 +167,10 @@ public class Aplicacion1 {
         System.out.println("intoduce numeros para sumar. teclea 0 para terminar");
         do {
             System.out.println("intoduce un numero");
-          n = leer.nextInt();
-        suma += n;
-        }while (n != 0);
-            System.out.println("la suma de los numeros es" + suma);
-        }
+            n = leer.nextInt();
+            suma += n;
+        } while (n != 0);
+        System.out.println("la suma de los numeros es" + suma);
     }
 
     public static void ejercicio_9() {
@@ -201,8 +196,7 @@ public class Aplicacion1 {
         int num, cont;
         System.out.println("introduzca un numero");
         num = leer.nextInt();
-        cont = 0
-        :
+        cont = 0;
         while (num > 0) {
             cont = cont + 1;
         }
