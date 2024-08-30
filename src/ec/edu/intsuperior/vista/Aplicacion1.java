@@ -4,8 +4,8 @@
  */
 package ec.edu.intsuperior.vista;
 
+import ec.edu.intsuperior.controlador.Operacion;
 import ec.edu.intsuperior.modelo.Ejercicios;
-
 
 /**
  *
@@ -14,10 +14,8 @@ import ec.edu.intsuperior.modelo.Ejercicios;
 public class Aplicacion1 {
 
     public static void main(String[] args) {
-       
-        Ejercicios.ejercicio_1();
-
+        int x=Operacion.edad(2024);
+        System.out.println(x);
     }
 
-   
 }
