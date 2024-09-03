@@ -18,7 +18,7 @@ public class Aplicacion {
         int num;
         boolean multiplo_3;
         multiplo_3 = false;
-        for (int i = 0; i < 5; i++);
+        for (int i = 0; i < 5; i++)
         System.out.println("introduzca un numero");
         num = leer.nextInt();
 
