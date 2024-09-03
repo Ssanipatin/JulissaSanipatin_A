@@ -176,7 +176,7 @@ public class Aplicacion1 {
         }while (n != 0);
             System.out.println("la suma de los numeros es" + suma);
         }
-    }
+    
 
     public static void ejercicio_9() {
         int n, num;
@@ -211,4 +211,118 @@ public class Aplicacion1 {
         System.out.println("se ha introducido;" + cont + "numeros");
 
     }
+    
+    
+    
+    public static void sumararreglo(String[] args) {
+        int n;
+         System.out.print("Ingrese el tamaño del arreglo: ");
+        n =leer.nextInt();
+        int[] arreglo = new int[n];
+        int suma = 0;
+        for (int i = 0; i < n; i++) {
+            System.out.print("Ingrese el elemento " + (i + 1) + ": ");
+            arreglo[i] = leer.nextInt();
+            suma += arreglo[i];
+        }
+
+        System.out.println("La suma de los elementos es: " + suma);
+    }
+    public static void maximinarreglo(String[] args) {
+        int n;
+         System.out.print("Ingrese el tamaño del arreglo: ");
+        n =leer.nextInt();
+
+        int[] arreglo = new int[n];
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Ingrese el elemento " + (i + 1) + ": ");
+            arreglo[i] = leer.nextInt();
+            if (arreglo[i] > max) max = arreglo[i];
+            if (arreglo[i] < min) min = arreglo[i];
+        }
+
+        System.out.println("El valor máximo es: " + max);
+        System.out.println("El valor mínimo es: " + min);
+    }
+    public static void ordenararreglo(String[] args) {
+        int n;
+        System.out.print("Ingrese el tamaño del arreglo: ");
+        n =leer.nextInt();
+
+        int[] arreglo = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Ingrese el elemento " + (i + 1) + ": ");
+            arreglo[i] = leer.nextInt();
+        }
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arreglo[j] > arreglo[j + 1]) {
+                    int temp = arreglo[j];
+                    arreglo[j] = arreglo[j + 1];
+                    arreglo[j + 1] = temp;
+                }
+            }
+        }
+
+        System.out.println("Arreglo ordenado:");
+        for (int num : arreglo) {
+            System.out.print(num + " ");
+    }
+    }
+    public static void contarveces(String[] args) {
+        int n;
+        System.out.print("Ingrese el tamaño del arreglo: ");
+        n = leer.nextInt();
+
+        int[] arreglo = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Ingrese el elemento " + (i + 1) + ": ");
+            arreglo[i] =leer.nextInt();
+        }
+
+        System.out.print("Ingrese el número a contar: ");
+        int numero = leer.nextInt();
+
+        int conteo = 0;
+        for (int num : arreglo) {
+            if (num == numero) conteo++;
+        }
+
+        System.out.println("El número " + numero + " aparece " + conteo + " veces.");
+    }
+    public static void invertirarreglo(String[] args) {
+        System.out.print("Ingrese el tamaño del arreglo: ");
+        int n;
+        n = leer.nextInt();
+
+        int[] arreglo = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Ingrese el elemento " + (i + 1) + ": ");
+            arreglo[i] = leer.nextInt();
+        }
+        for (int i = 0; i < n / 2; i++) {
+            int temp = arreglo[i];
+            arreglo[i] = arreglo[n - i - 1];
+            arreglo[n - i - 1] = temp;
+        }
+
+        System.out.println("Arreglo invertido:");
+        for (int num : arreglo) {
+            System.out.print(num + " ");
+        }
+    }
 }
+    
+
+
+
+
+
+
+
