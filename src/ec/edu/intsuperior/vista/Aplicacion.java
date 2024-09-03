@@ -20,7 +20,7 @@ public class Aplicacion {
         multiplo_3 = false;
         for (int i = 0; i < 5; i++)
         System.out.println("introduzca un numero");
-        num = leer.nextInt();
+        num=leer.nextInt();
 
         if (num % 3 == 0) {
             multiplo_3 = true;
